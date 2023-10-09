@@ -51,70 +51,407 @@ about_content: | # this will include new lines to allow paragraphs
   <mark>Spark, Hadoop, AirFlow</mark> 기반의 ETL 배치 파이프라인 개발 경험이 있는 <mark>데이터 엔지니어</mark>입니다. <mark>악성코드 침해사고 대응</mark>으로 2010년부터 커리어를 시작하여 8년의 경험이 있으며, 침해사고 예방을 위한 <mark>에반젤리스트</mark>로도 활동했습니다.<br>
   **활성 단말 2,500만대**의 안티바이러스 제품이 수집한 데이터를 통합하는 ETL 파이프라인을 개발하여 인공지능 모델 학습과 제품 적용에 기여했습니다.<br>
   현재는 침해사고 대응 부서에서 빅데이터 플랫폼을 구축하여, 방치 된 **데이터를 발굴**하는 업무 자동화 프로젝트와 ETL 개발을 리딩하고 있습니다. 또한 빅데이터 기술은 누구나 활용할 수 있어야 한다는 생각으로, 구축과 연동 방법들을 개인 블로그에 공유하고 있습니다.<br>
-  스스로 문제를 정의하고 해결하면서 **몰입과 성장**을 경험했습니다. 단순 반복 업무를 자동화하고 불필요한 프로세스의 개선을 통한 업무 효율 향상=을 추구합니다. 늦게 시작한 만큼 더욱 치열하게 다양한 데이터와 기술을 경험하여, 기술 리더로 성장하는 데이터 엔지니어가 되고자 합니다.
-
-# Experience Section
-# experience_title: Experience
+  스스로 문제를 정의하고 해결하면서 **몰입과 성장**을 경험했습니다. 단순 반복 업무를 자동화하고 불필요한 프로세스의 개선을 통한 업무 효율 향상을 추구합니다. 늦게 시작한 만큼 더욱 치열하게 다양한 데이터와 기술을 경험하여, 기술 리더로 성장하는 데이터 엔지니어가 되고자 합니다.
 
 content:
+  # Experience Section
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         title: 안랩 (AhnLab)
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        link: https://www.ahnlab.com
+        link_text: www.ahnlab.com
+        sub_title: 데이터 엔지니어<br>시니어 분석가
+        caption: Nov 2010 - Present
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          ## 대응팀 (2021.02 ~ 현재)
+          **프로젝트 리더 (데이터 엔지니어)** <br>
+          대응팀 전용의 업무 자동화와 데이터 프로젝트 기획, 관리, 개발, 운영 업무 주도 <br>
+          * 하둡 플랫폼과 ETL 파이프라인 구축으로 데이터 처리 시간 **90% 단축**
+          * 공개 된 침해사고 정보 수집 자동화 (vx-underground, RansomDB)
+          * 대응팀 업무 자동화 개발을 위한 개발 환경 구축, 표준 개발 환경 정리
+          <br> <br>
 
+          ## 인공지능팀 (2018.02 ~ 2020.01)
+          **시니어 개발자 (데이터 엔지니어)** <br>
+          Spark, Hadoop, AirFlow 기반의 ETL 파이프라인 개발 <br>
+          * **월별 150억건**의 행위 데이터 처리의 최적화, 튜닝으로 처리 시간 **70% 단축**
+          * 분석 이벤트 데이터를 통합하여 **70억개 파일**의 레이블 갱신의 성능 **50% 향상**
+          * 생성한 데이터는 AI 모델 학습에 사용되어 V3, MDS, EDR 제품에 탑재
+          <br> <br>
+
+          ## ASEC대응팀 (2010.11 ~ 2018.01)
+          **시니어 분석가, 에반젤리스트 (침해사고 분석/대응)** <br>
+          침해사고 분석, 주요 보안 이슈 대응, 사고 예방 활동 <br>
+          * **프리미엄 대표 사원 선정**  ([매일경제](https://www.mk.co.kr/premium/print/8724/) - 2014.12)
+          * 침해 사고 예방을 위한 보고서 작성 (**30여회**), 동향 발표 (**40여회**)
+          * 악성코드 기반 침해사고의 시스템 분석
+          * V3 제품 기반의 악성코드 이슈 대응
+
+  # Projects Section
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: 랜섬웨어 피해 통계 사이트 (RansomDB) 자동 수집 크롤러 개발
+        # link: github.com/sproogen
         # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/sproogen/modern-resume-theme
+        #  - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #    icon: fab fa-github
+        #    url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        caption:
+          프로젝트 리더(총 2명) / 기획, 설계, 구축, 코드리뷰, 멘토링 담당
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          <span style="font-size:125%">2023.03 - 2023.10 (7개월) / 대응팀</span>
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          수작업 기반의 랜섬웨어 피해 현황의 통계 생성 업무를 **100% 자동화**
+          - 아키텍처 설계, 구축, 연동, 자동화 방법들의 문서화
+          - 통계 정보 수집하는 CLI 기반 클라이언트 도구 개발 리딩
+          - 주간, 월간 통계 정보의 시각화와 정기적인 메일링 기능 개발 리딩  
+          
+          활용 기술    
+          <mark>AirFlow</mark>, <mark>PostgreSQL</mark>, <mark>Superset</mark>, <mark>Python</mark>, <mark>Selenium</mark>, <mark>BeautifulSoup</mark>
+
+      - layout: top-middle
+        title: 대량 데이터 가공과 분석을 위한 빅데이터 처리 플랫폼 구축
+        caption:
+          프로젝트 리더 겸 데이터 엔지니어 (총 3명) / 기획, 설계, 구축, 개발, 운영 담당
+        quote: >
+          <span style="font-size:125%">2023.01 - 2023.09 (9개월) / 대응팀</span>
+        description: | # this will include new lines to allow paragraphs
+          수작업에 의존하는 대량의 안리포트와 EDR 이벤트 로그를 처리할 수 있는 **빅데이터 플랫폼 구축**
+          - 플랫폼 구축, CLI 기반 클라이언트 도구와 파이프라인 **자동화 개발** 전담
+          - 기존 안리포트의 데이터 처리 시간의 **90% 단축** (PoC 기준)
+          - 아키텍처 설계, 구축, 연동, 자동화 방법들의 문서화하여 학습과 성장 경험 공유
+          - 비개발부서 자체적인 **업무 자동화 역량과 빅데이터 처리 환경 확보**  
+
+          활용 기술    
+          <mark>Hadoop</mark>, <mark>Spark</mark>, <mark>Ambari</mark>, <mark>AirFlow</mark>, <mark>Livy</mark>, <mark>Bigtop</mark>, <mark>MinIO</mark>, <mark>Docker</mark>, <mark>VirtualBox</mark>, <mark>Linux</mark>, <mark>Scala</mark>, <mark>Python</mark>
+
+          ![hadoop](./images/hadoop.png)
+
+      - layout: top-middle
+        title: 프로젝트 관리와 진행을 위한 기본 체계 구축 (일잘러 만들기)
+        caption:
+          프로젝트 리더 (총 2명) / 기획, 운영 담당
+        quote: >
+          <span style="font-size:125%">2022.08 - 2022.09 (2개월) / 대응팀</span>
+        description: | # this will include new lines to allow paragraphs
+          대응팀의 프로젝트 진행 역량 강화를 위한 방법론 수립과 가이드 문서 작성
+          - 서비스 업무와 개발 업무의 단계별 프로세스 정리와 **10여종의 맞춤형 템플릿** 작성 
+          - 프로젝트 관리에 대한 **팀원 교육 문서**로 활용
+
+          활용 기술    
+          <mark>Jira</mark>, <mark>Confluence</mark>, <mark>Waterfall</mark>, <mark>SW Engineering</mark>
+
+      - layout: top-middle
+        title: 악성 지표 자동 수집 플랫폼 구축 (vx-underground)
+        caption:
+          프로젝트 리더 겸 데이터 엔지니어 (총 1명) / 기획, 설계, 구축, 개발, 운영 담당
+        quote: >
+          <span style="font-size:125%">2022.05 - 2022.12 (8개월) / 대응팀</span>
+        description: | # this will include new lines to allow paragraphs
+          파이썬과 AirFlow를 활용한 외부 데이터의 자동 수집 체계 구축과 문서화
+          - 자동으로 vx-underground에 공개 된 악성코드와 보고서 파일 확보
+          - 크롤러와 다운로더 개발과 AirFlow를 활용한 **자동 실행 환경** 구축
+          - 동일한 아키텍처로 RansomDB 통계 정보 크롤링에 적용
+
+          활용 기술    
+          <mark>AirFlow</mark>, <mark>PostgreSQL</mark>, <mark>MinIO</mark>, <mark>Docker</mark>, <mark>Python</mark>
+
+      - layout: top-middle
+        title: 대응팀 기본 연구 개발 환경 구축 (Python, Docker, Scala)
+        caption:
+          프로젝트 리더 겸 데이터 엔지니어 (총 1명) / 기획, 설계, 구축, 개발, 운영 담당
+        quote: >
+          <span style="font-size:125%">2021.10 - 2022.01, 2023.07 - 2023.08 (총 6개월) / 대응팀</span>
+        description: | # this will include new lines to allow paragraphs
+          비개발부서의 개발 프로젝트를 위한 **표준 개발 환경** 제공
+          - SW 공학에 기초한 **형상관리, 빌드, 배포** 환경 구성
+          - Docker 기반의 GitLab, Jenkins, Nexus 구축과 Docker, Python, Scala 빌드 에이전트 구성
+          - 개발/**리뷰** 절차와 사용법 문서화로 **시행 착오 최소화**
+          - 업무에 활용하는 코드와 산출물의 **이력 관리** 적용
+
+          활용 기술    
+          <mark>GitLab</mark>, <mark>Jenkins</mark>, <mark>Nexus</mark>, <mark>Docker</mark>, <mark>VirtualBox</mark>, <mark>Python</mark>, <mark>VSCode</mark>, <mark>Scala</mark>, <mark>sbt</mark>, <mark>IntelliJ</mark>, <mark>SW Engineering</mark>
+
+      - layout: top-middle
+        title: AI 기반 피싱 URL 및 이메일 탐지 기술 개발
+        caption:
+          데이터 엔지니어 (총 8명) / eml 파일 레이블 생성 모델 개발 담당
+        quote: >
+          <span style="font-size:125%">2020.05 - 2021.01 (9개월) / 인공지능팀</span>
+        description: | # this will include new lines to allow paragraphs
+          오분류 분석을 위한 원본 피싱 메일 (eml) **6,000여개** 상세 분석
+          - 피싱 이메일의 eml 데이터 설계와 파이프라인 구축
+          - Snokel과 PySpark으로 데이터의 레이블 생성 모델 실험과 오분류 분석 수행
+          - 피싱 이메일 탐지 모델은 위협 선제 탐지 제품의 MTA 모듈에 탑재
+          
+          활용 기술    
+          <mark>Spark</mark>, <mark>PySpark</mark>, <mark>AirFlow</mark>, <mark>MinIO</mark>, <mark>PostgreSQL</mark>, <mark>Scala</mark>, <mark>Python</mark>, <mark>Jupyter</mark>, <mark>Snorkel</mark>, <mark>Pandas</mark>, <mark>Linux</mark>, <mark>PyCharm</mark>, <mark>VSCode</mark>, <mark>Malware Analysis</mark>, <mark>Jira</mark>, <mark>Confluence</mark>
+
+      - layout: top-middle
+        title: 그래프 DB 기반의 악성코드 탐지 기술 개발 (w. 비트나인)
+        caption:
+          데이터 엔지니어 (총 4명) / 데이터 모델링과 그래프 DB 데이터 검증 담당
+        quote: >
+          <span style="font-size:125%">2018.10 - 2018.12 (3개월) / 인공지능팀</span>
+        description: | # this will include new lines to allow paragraphs
+          사용자 단말에서 수집한 행위 데이터의 그래프 분석을 위한 데이터 모델링과 검증 수행
+          - 행위 데이터의 **그래프 데이터 모델링**과 데이터 변환
+          - 생성한 그래프 데이터의 침해사고 시나리오 쿼리 가능 여부 검증 
+          - 외부 업체와 협업을 위한 클라우드 기반의 Jira, Confluence 관리
+
+          활용 기술    
+          <mark>Spark</mark>, <mark>Hadoop</mark>, <mark>PostgreSQL</mark>, <mark>AgensGraph</mark>, <mark>CipherQL</mark>, <mark>Zeppelin</mark>, <mark>Jupyter</mark>, <mark>Bitbucket</mark>, <mark>Bamboo</mark>, <mark>Jira</mark>, <mark>Confluence</mark>, <mark>Graph Modeling</mark>, <mark>Agile</mark>, <mark>Open Inovation</mark>
+
+      - layout: top-middle
+        title: 인공지능 기술 연구 개발을 위한 원천 데이터 확보 및 관리 체계 구축
+        caption:
+          데이터 엔지니어 (총 8명) / Spark Application과 AirFlow ETL 파이프라인 개발 전담
+        quote: >
+          <span style="font-size:125%">2020.05 - 2021.01 (9개월) / 인공지능팀</span>
+        description: | # this will include new lines to allow paragraphs
+          Spark과 AirFlow 기반 ETL 파이프라인 개발과 최적화로 **평균 60% 이상 성능 향상**
+          - **월별 150억건**의 행위 데이터 처리의 RDD 구현과 최적화, 튜닝으로 **처리 시간 70% 단축**
+          - **70억개 파일**을 분석한 Kafka 이벤트로 최신 레이블을 갱신하는 작업의 **성능 50% 향상**
+          - **사내 최초**로 MSA 기능별로 분산 된 데이터 통합
+          - 생성한 데이터는 모델 학습과 **V3, MDS, EDR 제품에 탑재**
+          - AWS EMR과 S3를 활용한 클라우드 기반 데이터 처리 자동화 경험 
+          
+          활용 기술    
+          <mark>Spark</mark>, <mark>Hadoop</mark>, <mark>AirFlow</mark>, <mark>Livy</mark>, <mark>Ambari</mark>, <mark>AWS EMR</mark>, <mark>Zeppelin</mark>, <mark>Jupyter</mark>, <mark>AWS S3</mark>, <mark>MinIO</mark>, <mark>IntelliJ</mark>, <mark>VSCode</mark>, <mark>Bitbucket</mark>, <mark>Bamboo</mark>, <mark>Artifactory</mark>, <mark>Scala</mark>, <mark>sbt</mark>, <mark>Python</mark>, <mark>Docker</mark>, <mark>Linux</mark>, <mark>Agile</mark>, <mark>SW Engineering</mark>, <mark>Test-driven (Unit Test)</mark>, <mark>Architecture</mark>, <mark>Data Modeling</mark>, <mark>Jira</mark>, <mark>Confluence</mark>
+
+  - title: Skill # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title:  
+        description: | # this will include new lines to allow paragraphs
+          실제 업무에 활용했거나 사용 중인 도구들입니다.
+      - layout: left
+        title: Platform & Storage
+        description: | # this will include new lines to allow paragraphs
+          - <mark>Spark</mark>, <mark>PySpark</mark>, <mark>Hadoop</mark>, <mark>AWS EMR</mark>
+          - <mark>HDFS</mark>, <mark>MinIO</mark>, <mark>AWS S3</mark>
+          - <mark>AirFlow</mark>, <mark>Livy</mark>
+          - <mark>Ambari</mark>, <mark>Bigtop</mark>
+          - <mark>PostgreSQL</mark>
+      - layout: left
+        title: DevOps & Language
+        description: | # this will include new lines to allow paragraphs
+          - <mark>GitLab</mark>, <mark>BitBucket</mark>
+          - <mark>Jenkins</mark>, <mark>Bamboo</mark>
+          - <mark>Nexus</mark>, <mark>Artifactory</mark>
+          - <mark>Scala (Spark)</mark>, <mark>Python</mark>
+      - layout: left
+        title: Tool
+        description: | # this will include new lines to allow paragraphs
+          - <mark>Docker</mark>, <mark>sbt</mark>, <mark>VirtualBox</mark>, <mark>Linux</mark>
+          - <mark>Zeppelin</mark>, <mark>Jupyter Notebook</mark>, <mark>Jupyter Labs</mark>, <mark>Superset</mark>
+          - <mark>IntelliJ</mark>, <mark>PyCharm</mark>, <mark>VSCode</mark>
+          - <mark>Snorkel</mark>, <mark>Pandas</mark>, <mark>Selenium</mark>, <mark>BeautifulSoup</mark>
+          - <mark>Jira</mark>, <mark>Confluence</mark>
+          - <mark>AgensGraph</mark>, <mark>CipherQL</mark>
+      - layout: left
+        title: Methodology
+        description: | # this will include new lines to allow paragraphs
+          - <mark>Waterfall</mark>, <mark>Agile</mark>
+          - <mark>SW Engineering</mark>, <mark>Test-driven (Unit Test)</mark>
+          - <mark>Data Modeling</mark>, <mark>Graph Modeling</mark>
+
+  - title: Soft Skill # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: 팀 업무 환경 개선을 위한 자발적인 기획과 적용
+        description: | # this will include new lines to allow paragraphs
+          - 신규 입사자 직무 역량을 위한 표준 커리큘럼 기획과 교육 자료 제작 (2013-2017, 2021)
+          - Jira, Confluence 도입과 프로세스 수립 (2015)
+          - 형상관리 시스템과 코드 리뷰 도입 (2021)
+          - SRS (+SDS), 유닛 테스트 의무 작성 원칙 도입 (2022)
+          - Python, Scala, Dockerfile의 형상관리를 위한 프로젝트 템플릿 정의 (2022-2023)
+          - 대량의 침해 시스템 로그 분석에 Spark과 Zeppelin 활용 (2022-2023)
+          - 대용량 로그 데이터 처리와 분석을 위한 Hadoop과 Spark 플랫폼 구축 (2023)
+
+      - layout: top-middle
+        title: 직무 역량 향상과 동반 성장을 위한 리더십과 멘토링
+        description: | # this will include new lines to allow paragraphs
+          - 신규 입사자와 신규 팀원 직무 교육 담당 (2012-2017)
+          - 신규 입사자 멘토링 (2012-2015, 2018, 2019)
+          - 전환 배치 팀원 멘토링 (2013-2017, 2020, 2022)
+          - 실천 기반의 프로젝트 리딩과 기술 매뉴얼 제공 (2022-2023)
+          - Spark The Definitive Guide 스터디 리딩 (2019-2020, 2023)
+          - Programming in Scala 스터디 리딩 (2019-2020)
+          - 인텔리전스 기반 사고대응 스터디 리딩 (2023)
+
+      - layout: top-middle
+        title: 기술 문서 작성과 노하우 공유
+        description: | # this will include new lines to allow paragraphs
+          - 악성코드 신고센터 업무 매뉴얼 작성과 공유 (2013-2015)
+          - 악성코드 동향 및 분석 보고서 발행 30여회 (2011-2017)
+          - 악성코드 동향과 사고 예방을 위한 강연 50여회 (2012-2017, 2022-2023)
+          - 위협 인텔리전스 표준 MAEC, STIX, ATT&CK 기술 조사 (2018)
+          - 위협 인텔리전스 오픈소스 플랫폼 MISP,  YETI, CRITs 기술 조사와 테스트 (2021)
+          - 침해사고 대응 오픈소스 플랫폼 TheHive, FIR 기술조사와 테스트 (2021)
+          - 위협 인텔리전스 분석을 위한 과학적 정보 분석론 기술조사 (2022)
+          - 업무 자동화와 빅데이터 플랫폼 구축 방법 문서 작성, 기술 포스팅 200여개 작성 (2021-2023)
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: 정규과정
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          - 2006.03 – 2011.02 : 연세대학교 일반대학원 이학석사 (전산학, 영상통신)
+          - 2002.03 – 2006.02 : 연세대학교 원주캠퍼스 공학사 (컴퓨터공학전공)
+          - 1999.03 – 2002.02 : 원주고등학교 (강원도 원주시)
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: 데이터 엔지니어링
+        description: | # this will include new lines to allow paragraphs
+            - 2021.04.28 - 2021.04.30 : IT인을 위한 ELK 통합로그시스템 구축과 활용 - Inflearn
+            - 2018.04.28 - 2018.07.07 : 딥러닝-영상인식 4기 교육 - Fast Campus
+            - 2018.03.13 - 2018.03.20 : Exploratory Data Analysis - Coursera
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - layout: left
+        title: 침해사고 분석/대응
+        description: | # this will include new lines to allow paragraphs
+            - 2021.06.21 - 2021.06.25 : 윈도우 애플리케이션 취약점 분석 입문부터 활용까지 - Inflearn
+            - 2021.04.23 - 2021.04.28 : 악성코드 분석 중급 과정 (유형별 분석) - Inflearn
+            - 2021.04.15 - 2021.04.23 : 윈도우 악성코드(malware) 분석 입문 과정 - Inflearn
+            - 2012.11.12 - 2012.11.16 : (Skill-up) DDOS, 리버스엔지니어링, 침해사고 분석 실무과정 - KISA
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+  - title: Communications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: 개인 블로그
+        link: https://www.bearpooh.com
+        link_text: www.bearpooh.com
+        description: | # this will include new lines to allow paragraphs
+          ## **곰탱푸닷컴 ([https://www.bearpooh.com](https://www.bearpooh.com))**
+          - 빅데이터와 인텔리전스 관련 기술 조사, 구축/운영/연동 방법, 트러블 슈팅 등을 정리하고 공유하는 개인 블로그
+          - 평일 평균 PV 1,000 ~ 1,300, MAU 1.7만, 월 PV 2.5만
+          - 2021년 6월 이후 2년간 200여개의 기술 포스팅으로 누적 PV 52만 (2023년 9월 기준)
+
+      - layout: top-middle
+        title: 프리젠테이션
+        description: | # this will include new lines to allow paragraphs
+          ## **Data Engineering**
+          - N/A
+
+          ## **Incident Response**
+          - 2023.04.24 / 06.12 / 07.24 / 09.18 : 사이버안전훈련센터 침해사고 동향 강연 (과거 사례로 이해하는 2023년 주요 보안 위협 / 대전)
+          - 2022.06.13 / 07.18 / 10.17 / 11.28 : 사이버안전훈련센터 침해사고 동향 강연 (사례 중심의 최근 침해사고 동향 소개 / 대전) 
+          - 2017.10.20 : 한국방위산업진흥회 악성코드 분석 교육 
+          - 2017.09.21 : 서울여대 정보보호학과 악성코드 과목 '분석툴 소개' 강의
+          - 2017.06.13 / 06.27 : AhnLab ISF SQUARE 2017 보안동향 발표 (지금도 계속 되는 정보보안 위협 / 서울, 대전)
+          - 2017.04.25 : 이천시청 임직원 대상 정보보안 교육 (정보보호 어렵지 않습니다. - 보안동향 및 대처방안)
+          - 2017.04.22 / 08.04 / 09.09 : 서울여대 정보보안 영재교육원 보안 교육 (악성코드 개요 및 안전한 PC사용)
+          - 2016.10.27 : 상상이룸센터 안랩견학 악성코드 동향 발표 (지속되는 랜섬웨어의 위협과 대응 방안)
+          - 2016.06.21 : AhnLab ISF SQUARE 2016 in Daejeon 랜섬웨어 동향 발표 (랜섬웨어를 통해 살펴 본 최근 보안 트렌드)\2016.04.23 / 07.09 / 09.24 : 서울여대 정보보안 영재교육원 보안 교육 (악성코드 개요 및 안전한 PC사용)
+          - 2016.01.11 : 서울여대 정보보호 여성인력개발 캠프 특강 (최근 악성코드 동향과 대처방안)
+          - 2015.10.20 / 10.27 : 안랩 EP기술지원본부 악성코드 분석 강의
+          - 2015.08.27 : AhnLab ISF SQUARE 2015 in Jeonju 보안동향 발표 (최근 악성코드 동향과 대처방안 / 전주, 헤드아이티)
+          - 2015.02.03 : 영남대학교 컴퓨터공학과 방문행사 초청 발표 (입사 과정과 최근 보안 동향)
+          - 2014.12.10 : 경기도 정보컴퓨터 교과 연구회 (온라인뱅킹 사고에 대처하는 우리의 자세)
+          - 2014.10.18 / 11.01 / 11.15 / 12.13 : 서울여대 정보보안 영재교육원 보안 교육 (악성코드 개요 및 안전한 PC사용)
+          - 2014.09.19 : 안랩 파트너사 보안 교육 (악성코드 동향)
+          - 2014.09.11 : 서강대 정보통신대학원 정보보안 교육 (해킹 및 침해대응개요 - 침해사고사례, 보안동향) 
+          - 2014.06.27 : SBS 서울방송 임직원 정보보안 교육 (정보보안 동향과 침해사고 분석)
+          - 2014.05.22 : 고양외고 회사 투어 보안 특강
+          - 2014.04.28 : 연세대 컴퓨터정보통신공학부 진로 특강
+          - 2014.04.16 : 한양대 일반대학원 정보보안 교육 (정보보안 동향과 침해사고 분석)
+          - 2014.04.16 : 서강대 정보통신대학원 정보보안 교육 (해킹 및 침해대응개요 - 침해사고사례, 보안동향)
+          - 2014.03.10 / 03.13 : 안랩 보안서비스 본부 인턴교육 (정보보안 동향과 침해사고 분석) 
+          - 2014.03.05 : 서강대 정보통신대학원 (악성코드 및 취약성 분석 - 보안 위협 요소, 동향)
+          - 2014.02.25 : 연세대 일반대학원 전산학과 BK21 워크샵 세미나 특강
+          - 2013.10.18 : 이공계 고등학생 회사투어 진로 특강 (보안전문가의 하루)
+          - 2013.09.05 : 서강대 정보통신대학원 정보보안 교육 (해킹 및 침해대응개요 - 침해사고사례, 보안동향)
+          - 2013.06.25 ~ 2013.06.28 : 예탁결제원 정보보안교육 (악성코드 분석 방법)
+          - 2013.03.13 : 서강대 정보통신대학원 정보보안 특강 (드라마 유령을 통해 살펴보는 생활속 사이버 보안)
+          - 2013.03.12 : 안랩 보안서비스본부 인턴교육 (정보보안 동향과 침해사고 분석)
+          - 2013.02.27 : 안철수재단 정보보안특강 (안전한 PC사용)
+          - 2012.12.18 : 이공계 고등학생 회사투어 진로 특강 (보안전문가의 하루)
+          - 2012.11.08 : 평촌고등학교 회사투어 정보보안 특강 (드라마 유령을 통해 살펴보는 생활속 사이버 보안)
+          - 2012.10.09 : 안랩 보안서비스본부 인턴교육 (안리포트를 이용한 침해사고 분석)
+          - 2012.07.26 : 포항공과대학교 교직원 정보보안 특강 (드라마 유령을 통해 살펴보는 생활속 사이버 보안)
+
+      - layout: top-middle
+        title: Open Source
+        description: | # this will include new lines to allow paragraphs
+          - N/A
+
+      - layout: top-middle
+        title: Interview
+        description: | # this will include new lines to allow paragraphs
+          - 2014.12.18 : 매일경제 안랩 프리미엄 사원 [인터뷰](https://www.mk.co.kr/premium/print/8724/)
+          - 2013.09.13 : 안랩 2013년 하반기 공채 홍보 영상 [인터뷰](https://www.youtube.com/watch?app=desktop&v=KFY3u3N830I)
+          - 2011.01.11 : 안랩 보안세상, [신입사원들이 꼽은 면접 때 가장 인상적인 질문](https://blogsabo.ahnlab.com/601)
+
+      - layout: top-middle
+        title: Article
+        description: | # this will include new lines to allow paragraphs
+          ## **Data Engineering**
+          - N/A
+          
+          ## **Incident Response**
+          - 2017.09.06 : 안랩 시큐리티레터 689호, [PC 부팅 불가 랜섬웨어, 공격자의 실수 혹은 예고?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26769)
+          - 2017.07.13 : 안랩 시큐리티레터 681호, [이름부터 낯선 Shifr 랜섬웨어 등장.. 주의!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26611)
+          - 2017.07.03 : 월간安, [전격 해부, 2017년 상반기 휩쓴 랜섬웨어 광풍](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26558)
+          - 2017.02.07 : 월간安, [사회기반시설까지 노린 랜섬웨어, 어떻게 변했나](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26047)
+          - 2017.02.06 : 랜섬웨어대응센터, [사회기반시설까지 노린 랜섬웨어, 어떻게 변했나](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26047)
+          - 2017.01.02 : 월간安, [씁쓸하고 치밀하新 2017년 보안 위협](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25907)
+          - 2016.12.05 : 월간安, [2016년 보안 위협, 적자생존 속 진화 중!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25780)
+          - 2016.11.03 : 안랩 시큐리티레터 646호, [랜섬웨어, 미국 대선 노리나?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25658)
+          - 2016.10.13 : 안랩 시큐리티레터 643호, []'미드'에서 영감 얻은 랜섬웨어?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25577)
+          - 2016.08.02 : 월간安, [2016년 상반기 키워드는 랜섬웨어∙표적 공격! 하반기는?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25300)
+          - 2016.07.13 : 안랩 시큐리티레터 631호, [또다시 등장한 록키 랜섬웨어…주의!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25228)
+          - 2016.07.07 : 안랩 시큐리티레터 630호, [랜섬웨어도 "Show Me the Money"?!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25208)
+          - 2016.07.04 : 월간安, [랜섬웨어도 “$how me the MONEY!”](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25198)
+          - 2016.03.25 : 안랩 보도자료, [록키(Locky) 랜섬웨어 변종 피해 예방위한 ‘사용자 주의사항’ 발표](https://blog.ahnlab.com/1887) (원본글 작성)
+          - 2015.10.08 : 안랩 시큐리티레터 593호, [일상 생활에서 무심코 지나치는 개인정보 노출](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=24136)
+          - 2015.09.10 : 안랩 시큐리티레터 589호, [랜섬웨어의 인질이 되지 않는 5가지 방법](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=24037)
+          - 2014.12.11 : 안랩 시큐리티레터 554호, [간단하게 알아보는 보이스피싱 예방법](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=23164)
+          - 2014.09.18 : 안랩 시큐리티레터 543호, [악성인 듯, 악성 아닌, 악성같은 PUP](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=22861)
+          - 2014.05.08 : 안랩 시큐리티레터 528호, [중소규모 쇼핑몰 이용시 '파밍' 주의](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=22421)
+          - 2012.08.30 : 안랩 시큐리티레터 445호, [URL 속에 존재하는 검은 손](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=19863)
+          - 2012.07.05 : 보안뉴스, [안랩, 통신사 요금명세서 사칭 악성코드 주의보](https://blog.ahnlab.com/1334)
+          - 2012.06.21 : 안랩 시큐리티레터 435호, [인터넷 시작 페이지는 왜 바뀌었을까?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=19528)
+          - 2012.05.03 : 안랩 시큐리티레터 428호, [자꾸 뜨는 광고창 이유가 뭘까?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&curPage=&columnist=&series_key=&seq=19395)
+
+      - layout: top-middle
+        title: Volunteer
+        description: | # this will include new lines to allow paragraphs
+          - 2014.02.19 : 판교 CSR얼라이언스 청소년 보안교실 IT스쿨 15기 일일멘토
+          - 2012.01.17 : 안랩 청소년 보안교실 V스쿨 11기 일일멘토
+
+  - title: ETC # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Military Service
+        sub_title: 爲國獻身軍人本分
+        description: | # this will include new lines to allow paragraphs
+          - 2014.08.07 : 예비역 육군 대위 진급 (예비역간부진급)
+          - 2013.09.05 :  2013년 3879부대 3대대 동원훈련 유공 (성남시장 표창) - 제 1623호
+          - 2007.12.11 : 2007년 호국훈련 유공 (3323부대장 - 대대장 표창)
+          - 2007.06.19 : 2007년 주둔지 방호훈련 유공 (1군사령부 본부사령 - 연대장 표창)
+          - 2006.03.01 - 2008.06.30 : 대한민국 육군 중위 전역 (ROTC 44기, 연세대학교 1071 학군단)
+
+      - layout: top-middle
+        title: Architecture
+        sub_title: 2021년부터 대응팀에 구축한 전체 시스템 구성도
+        description: | # this will include new lines to allow paragraphs
+          ![hadoop](./images/architecture.png)
 
 # Footer
 footer_show_references: true
