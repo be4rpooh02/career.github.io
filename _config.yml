@@ -217,7 +217,7 @@ content:
         caption:
           데이터 엔지니어 (총 8명) / Spark Application과 AirFlow ETL 파이프라인 개발 전담
         quote: >
-          <span style="font-size:125%">2020.05 - 2021.01 (9개월) / 인공지능팀</span>
+          <span style="font-size:125%">2018.03 - 2019.04, 2019.05 - 2020.04 (2년 2개월) / 인공지능팀</span>
         description: | # this will include new lines to allow paragraphs
           Spark과 AirFlow 기반 ETL 파이프라인 개발과 최적화로 **평균 60% 이상 성능 향상**
           - **월별 150억건**의 행위 데이터 처리의 RDD 구현과 최적화, 튜닝으로 **처리 시간 70% 단축**
