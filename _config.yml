@@ -96,7 +96,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: <soan style="text-align: left">랜섬웨어 피해 통계 사이트 (RansomDB) 자동 수집 크롤러 개발</span>
+        title: 랜섬웨어 피해 통계 사이트 (RansomDB) 자동 수집 크롤러 개발
         # link: github.com/sproogen
         # link_text: Project Website
         #additional_links:
@@ -107,7 +107,7 @@ content:
         #    icon: fab fa-github
         #    url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         caption:
-          <span style="text-align: left">프로젝트 리더(총 2명) / 기획, 설계, 구축, 코드리뷰, 멘토링 담당</span>
+          프로젝트 리더(총 2명) / 기획, 설계, 구축, 코드리뷰, 멘토링 담당
         quote: >
           <span style="font-size:125%">2023.03 - 2023.10 (7개월) / 대응팀</span>
         description: | # this will include new lines to allow paragraphs
