@@ -133,6 +133,7 @@ content:
 
           활용 기술
           <mark>Spring Boot</mark>, <mark>Vue.js 3</mark>, <mark>Zeppelin</mark>, <mark>Spark</mark>, <mark>Java</mark>, <mark>Javascript</mark>, <mark>Scala</mark>
+
       - layout: top-middle
         title: 랜섬웨어 피해 통계 사이트 (RansomDB) 자동 수집 크롤러 개발
         # link: github.com/sproogen
